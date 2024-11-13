@@ -55,11 +55,37 @@ public class ComercioTres {
         System.out.println("Ingrese el porcentaje de descuento por favor");
         porcentajeSeguro = entrada.nextDouble ();
         
+/** opción 1 Si el resultado está en el rango se utiliza este mismo
+*Si no está dentro del rango, se asigna el valor de 10
+*/
+        if (porcentajeSeguro >= 1 && porcentajeSeguro <= 15) {
+            porcentajeSeguro = porcentajeSeguro + 0;
+        } else {
+            porcentajeSeguro = 10;
+        }
+        /*
+        // opción 2 no se usa ya que no hay in igual que en las fórmulas, si se
+        pone un valor igual no lo lee o nos da un mal resultado
+        if (porcentajeSeguro > 15) {
+            porcentajeSeguro = 10;
+        }
+        
+         // opción 3 no se usa ya que no hay in igual que en las fórmulas, si se
+        pone un valor igual no lo lee o nos da un mal resultado, se debe especificar
+        porque el numero podría ser igual a la condicion
+        if (porcentajeSeguro < 1 || porcentajeSeguro > 15) {
+            porcentajeSeguro = 10;
+        }
+
+        // opción 4 no se usa ya que no hay in igual que en las fórmulas, si se
+        pone un valor igual no lo lee o nos da un mal resultado
+        if (porcentajeSeguro < 1 && porcentajeSeguro > 15) {
+            porcentajeSeguro = 10;
+        }
+        */
+        
         // calcular la productividad, condicionales anidados
         productividad = numeroProductos * coeficiente;
-    if (porcentajeSeguro >=1 && porcentajeSeguro >=15 ){
-        porcentajeSeguro = 10;
-    }
         
         if (productividad<=30){
             bono = 25; // $25
