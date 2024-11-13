@@ -13,10 +13,11 @@ public class Ejemplo02 {
     
     public static void main(String[] args) {
         String pais;
-        
+        // Se cuenta desde 0 
         pais = "Ecuador";
         //      0123456
         char letra = pais.charAt(0);
+        // char es para solo una letra o un caracter
         System.out.printf("%s\n", letra);
         
     }

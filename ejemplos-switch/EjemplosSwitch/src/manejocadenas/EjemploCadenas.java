@@ -13,11 +13,13 @@ public class EjemploCadenas {
     public static void main(String[] args) {
         String ciudad = "loJa";
         ciudad = ciudad.toUpperCase();
+        // Se presenta en mayúscula
         System.out.printf("%s\n", ciudad.toLowerCase());
         // System.out.printf("%s\n", ciudad.toUpperCase());
+        // Se presenta en minúscula
         System.out.printf("%s\n", ciudad);
-        // toLowerCase es un método
-        // toUpperCase es un método
+        // toLowerCase es un método para presentar todo en minúscula
+        // toUpperCase es un método para presentar todo en mayúscula
         
     }
 }
