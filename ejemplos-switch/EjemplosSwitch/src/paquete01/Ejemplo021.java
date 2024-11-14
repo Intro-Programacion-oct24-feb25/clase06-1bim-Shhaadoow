@@ -90,6 +90,6 @@ public class Ejemplo021 {
                 break;
         }
         System.out.printf("Usted ha nacido el %d de %s de %d", numeroDia, 
-                mesCadena, year);
+                mesCadena.toUpperCase(), year);
     }
 }
